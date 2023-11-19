@@ -53,12 +53,13 @@
   border: 1px solid black;
   background-color: gray;
   max-width: 200px;
-  font-size: 10px;
+  font-size: 20px;
+
 }
 
 .fundopdv img {
   width: 100px;
-  height: auto;
+  height: 200px;
   align-items: center;
   padding: 20px;
   width: 150px;
@@ -81,6 +82,25 @@
   font-size: 20px;
 }
 
+@media (max-width: 320px) {
+  .livroin {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: nowrap;
+      overflow-x: auto; 
+    padding-left: 10px;
+    }
+    .fundopdv{
+    }
+  
+
+.carousel-slide img{
+  
+  height: 100px;
+  width: auto;
+  }
+}
+
 @media(max-width:425px){
   .container{
     width: auto;
@@ -99,21 +119,28 @@
     margin-bottom: 10px; 
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 768px) {
+  
   .livroin {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: nowrap;
-      overflow-x: auto; 
-    }
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: auto; 
+  
   }
 
-  .fundopdv {
-    
-      max-width: 100%; 
-    
-    
-   
+  .fundopdv{
+    height: 310px;
+    width: 150px;
+    margin: auto;
+    padding-left: 2px;   
+    margin: 20px;
+    text-align: center;
+    align-items: center;
   }
-  
+   
+   
+}
+.navbar-toggler{
+  z-index: 3;
 }
